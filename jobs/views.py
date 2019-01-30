@@ -7,5 +7,5 @@ from .models import Jobs
 class JobsListView(ListView):
     model = Jobs
     context_object_name = 'jobs'
-    template_name='homes'
+    template_name='home.html'
     queryset = Jobs.objects.order_by('-upload_date')
