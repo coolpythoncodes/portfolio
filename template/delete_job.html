@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+
+{% block title %}Delete Job{% endblock title %}
+
+
+{% block jobs %}
+<br/>
+    <div class="container">
+        <h2>Delete Job</h2>
+        <form method="post">{% csrf_token %}
+            <p> Are you sure you want to delete this job?"</p>
+            <button class="btn btn-danger ml-2" type="submit">Confirm</button>
+        </form>
+    </div>
+{% endblock jobs %}
+
+
+{% block footer %}
+    
+{% endblock footer %}
+    
+    
+
+    
+
+    
