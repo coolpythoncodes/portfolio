@@ -7,9 +7,9 @@
 <br/>
     <div class="container">
         <h2>change job image</h2>
-        <form method="post">{% csrf_token %}
+        <form enctype="multipart/form-data" method="post">{% csrf_token %}
             {{ form.as_p }}
-            <button class="btn btn-Success ml-2" type="submit">Add</button>
+            <button class="btn btn-Success ml-2" type="submit">Change</button>
         </form>
     </div>
 {% endblock jobs %}

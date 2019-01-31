@@ -26,6 +26,7 @@ class JobsCreateView(CreateView):
     model = Jobs
     fields = ['image']
     template_name = "new_job.html"
+    success_url = reverse_lazy('home')
 
 
 class JobsUpdateView(UpdateView):
