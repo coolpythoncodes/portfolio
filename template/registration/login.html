@@ -15,15 +15,12 @@
 			{{form.as_p}}
 			<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
       <hr class="my-4">
-              <a class="btn btn-lg btn-github btn-block text-uppercase" href="{% url 'social:begin' 'github' %}" role="button"><i class="fab fa-github"></i> Login with GitHub</a>
-              <a class="btn btn-lg btn-facebook btn-block text-uppercase" href="{% url 'social:begin' 'facebook' %}" role="button"><i class="fab fa-facebook-f mr-2"></i> Login with Facebook</a>
-              <a class="btn btn-lg btn-twitter btn-block text-uppercase" href="{% url 'social:begin' 'twitter' %}" role="button"><i class="fab fa-twitter mr-2"></i> Login with Twitter</a>
-                      
+                
       
 			</form>
           </div>
           <div class="card-footer text-muted text-center">
-            New to ABS-Forum? <a href="{% url 'signup' %}">Sign up</a>
+            New to ABS-Forum? <a href="#">Sign up</a>
           </div>
           <div class="text-center py-2">
           <small>
@@ -36,7 +33,7 @@
       </div>
     </div>
   </div>
-{% endblock  jobs%}
+{% endblock jobs %}
 
 {% block footer %}
 {% endblock footer %}
