@@ -1,5 +1,5 @@
 from django.views.generic import ListView
-from django.views.generic.edit import CreateView, DeleteView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse_lazy
 from .models import Jobs
 
@@ -26,5 +26,14 @@ class JobsCreateView(CreateView):
     model = Jobs
     fields = ['image']
     template_name = "new_job.html"
+
+
+class JobsUpdateView(UpdateView):
+    model = Jobs
+    fields = ['image']
+    template_name = "change_job.html"
+
+
+
 
 
