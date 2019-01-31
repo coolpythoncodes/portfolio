@@ -11,7 +11,8 @@
 
     <title>{% block title %}Godson Chuks - Portfolio{% endblock title %}</title>
         
-    
+      <!-- Font Awesome icons -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
          
 
     <!-- Bootstrap core CSS -->
@@ -45,9 +46,12 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             {% block navlink %}
-            <a class="nav-item nav-link " href="#">Instagram</a>
-            <a class="nav-item nav-link " href="#">Facebook</a>
-            <a class="nav-item nav-link " href="{% url 'new' %}">New Job</a>
+            
+            <a class="nav-item nav-link " href="https://www.instagram.com/tutorialgraphics/" ><i class="fab fa-instagram"></i></a>
+            <a class="nav-item nav-link " href="https://www.linkedin.com/in/victory-godson-361895119/"><i class="fab fa-linkedin"></i></a> 
+            <a class="nav-item nav-link " href="https://web.facebook.com/tutorialgraphicsdesigngroup/"><i class="fab fa-facebook-square"></i></a>
+            <a class="nav-item nav-link " href="https://www.twitter.com/GodsonChuks4"><i class="fab fa-twitter-square"></i></a> 
+            <a class="nav-item nav-link " href="{% url 'new' %}"><i class="fas fa-plus-circle"> New Job</i></a>
             
             {% endblock navlink %}
             
