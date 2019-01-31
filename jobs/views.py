@@ -32,6 +32,7 @@ class JobsUpdateView(UpdateView):
     model = Jobs
     fields = ['image']
     template_name = "change_job.html"
+    success_url = reverse_lazy('home')
 
 
 
