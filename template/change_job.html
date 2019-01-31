@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+
+{% block title %}Change Job Image{% endblock title %}
+
+
+{% block jobs %}
+<br/>
+    <div class="container">
+        <h2>change job image</h2>
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-Success ml-2" type="submit">Add</button>
+        </form>
+    </div>
+{% endblock jobs %}
+
+
+{% block footer %}
+    
+{% endblock footer %}
+    
+    
+
+    
+
+    
