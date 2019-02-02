@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     # Local Apps
     'jobs',
     'accounts',
+
+    #Third party apps
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
