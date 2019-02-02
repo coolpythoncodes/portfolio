@@ -1,34 +1,30 @@
 {% extends 'home.html' %}
 
+{% load crispy_forms_tags %}
 
-{% block title %}Sign up{% endblock %}
+{% block title %}Sign Up{% endblock %}
 
 
-{% block jobs %}
-<div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Sign up</h5>
-            <form method="post">{% csrf_token %}
-			{{form.as_p}}
-			<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign up</button>
-        
-      
-			</form>
-          </div>
-          <div class="card-footer text-muted text-center">
-            Already have an account? <a href="{% url 'login' %}">Login</a>
-          </div>
-          
-        </div>
-        
-        </div>
-      </div>
+
+    {% block jobs %}
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form method="post">{% csrf_token %}
+            {{form|crispy}}
+            <button class="btn btn-success ml-2" type="submit">Sign Up</button>	
+        </form>
+
     </div>
-  </div>
+
+	
+
 {% endblock jobs %}
 
+
+
+
+
 {% block footer %}
+    
 {% endblock footer %}
+    

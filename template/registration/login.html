@@ -1,39 +1,24 @@
 {% extends 'home.html' %}
 
-
 {% block title %}Login{% endblock %}
 
-
 {% block jobs %}
-<div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Login</h5>
-            <form method="post">{% csrf_token %}
-                {{form.as_p}}
-			<button class="btn btn-lg btn-primary btn-block text-uppercase my-6" type="submit">Login</button>
-      
-                
-      
-			</form>
-          </div>
-          <div class="card-footer text-muted text-center">
-            Create your porfolio. <a href="{% url 'signup' %}">Sign up</a>
-          </div>
-          <div class="text-center py-2">
-          <small>
-            <a href="{% url 'password_reset' %}" class="text-muted">Forgot your password?</a>
-          </small>
-        </div>
-        </div>
-        
-        </div>
-      </div>
-    </div>
-  </div>
+<br>
+<div class="container" >
+  <h2>Login</h2>
+	<form method="post">{% csrf_token %}
+		{{form.as_p}}
+    <p><button class="btn btn-success ml-2 " type="submit">Login</button> | <a href="{% url 'password_reset' %}">Forgot password</a></p> 
+    <p><a href="{% url 'signup' %}">SignUp</a></p> 	
+		
+	</form>
+</div>
+
+
 {% endblock jobs %}
 
+
 {% block footer %}
+  
 {% endblock footer %}
+  
