@@ -13,6 +13,7 @@ pillow = "*"
 django-crispy-forms = "*"
 gunicorn = "*"
 whitenoise = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.6"
