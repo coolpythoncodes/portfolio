@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Contact me{% endblock title %}
+
+{% block jobs %}
+
+<div class="container">
+    <br>
+    <h1>Contact Me</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+            <button class="btn btn-success" type="submit">Send</button>
+        
+    </form>
+</div>
+    
+{% endblock jobs %}
+
+
+{% block footer %}
+    
+{% endblock footer %}
+    
+    
