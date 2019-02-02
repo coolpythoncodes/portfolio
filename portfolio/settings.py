@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Local Apps
     'jobs',
     'accounts',
+    'sendemail'
 
     #Third party apps
     'crispy_forms',
