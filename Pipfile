@@ -9,10 +9,10 @@ verify_ssl = true
 django = "*"
 python-decouple = "*"
 psycopg2 = "*"
-
 install = "*"
 pillow = "*"
 django-crispy-forms = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
